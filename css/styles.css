@@ -1,0 +1,156 @@
+*
+{
+  box-sizing: border-box;
+}
+/* ================ */
+/* ===== BODY ===== */
+/* ================ */
+html
+{
+  scroll-behavior: smooth;
+  height: 100%;
+}
+body
+{
+  height: 100%;
+  font-family: Roboto;
+}
+
+/* ========== BUTTON ========= */
+.button
+{
+  /* display: inline-block; */
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  padding: 12px;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  border: 0;
+  background-color: #EA625C;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+/* =============================================== */
+/* ================= CONTAINER =================== */
+/* =============================================== */
+.container
+{
+  max-width: 1040px;
+  width: 100%;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  border: 3px solid blue;
+}
+
+/* =========================================== */
+/* ============== SITE HEADER ================ */
+/* =========================================== */
+.site-header
+{
+  border: 3px solid red;
+}
+.site-logo-img
+{
+  display: flex;
+}
+.site-header-top-container
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+.site-header-list
+{
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+.site-header-list-item
+{
+  list-style: none;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 23px;
+}
+.site-header-list-item:not(:last-child)
+{
+  margin-right: 30px;
+}
+.site-header-list-item:last-child
+{
+  margin-left: 10px;
+}
+.site-header-list-link
+{
+  text-decoration: none;
+  color: #333333;
+}
+.site-header-list-link:hover
+{
+  opacity: 0.8;
+}
+.site-header-list-link:active
+{
+  opacity: 0.6;
+}
+.site-header-list-help-you-link
+{
+  color: #666666;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #333333;
+}
+/* ======= HEADER MAIN ====== */
+.site-header-main-container
+{
+display: flex;
+
+}
+.site-header-main-heading
+{
+  font-family: Roboto;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 60px;
+  color:  #000000;
+  padding: 0;
+  margin: 0;
+  margin-top: 170px;
+  margin-bottom: 30px;
+}
+.site-header-main-text
+{
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #777777;
+  width: 490px;
+  border-left: 3px solid #888888;
+  padding: 0;
+  margin: 0;
+  padding-left: 40px;
+  margin-bottom: 30px;
+}
+
+.site-header-main-button
+{
+
+}
+.site-header-main-img
+{
+
+  margin-top: 79px;
+width: auto;
+height: 565px;
+position: absolute;
+right: 0px;
+}
