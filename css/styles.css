@@ -15,11 +15,17 @@ body
   height: 100%;
   font-family: Roboto;
 }
-
+img
+{
+max-width: 100%;
+display: block;
+}
 /* ========== BUTTON ========= */
 .button
 {
-  /* display: inline-block; */
+  display: inline-block;
+  max-width: 260px;
+  width: 100%;
   font-family: Roboto;
   font-size: 18px;
   font-weight: 700;
@@ -33,6 +39,14 @@ body
   color: #FFFFFF;
   text-transform: uppercase;
 }
+.button:hover
+{
+  opacity: 0.8;
+}
+.button:active
+{
+  opacity: 0.6;
+}
 
 /* =============================================== */
 /* ================= CONTAINER =================== */
@@ -45,7 +59,6 @@ body
   padding-left: 20px;
   margin-right: auto;
   margin-left: auto;
-  border: 3px solid blue;
 }
 
 /* =========================================== */
@@ -53,7 +66,7 @@ body
 /* =========================================== */
 .site-header
 {
-  border: 3px solid red;
+
 }
 .site-logo-img
 {
@@ -111,10 +124,42 @@ body
 /* ======= HEADER MAIN ====== */
 .site-header-main-container
 {
-display: flex;
-
+  display: flex;
 }
-.site-header-main-heading
+.header-main-bg
+{
+  margin-top: 85px;
+  margin-right: -125px;
+  width: 587px;
+  height: 565px;
+  display: flex;
+  background-image: url(../img/watch.png);
+  background-repeat: no-repeat;
+  background-size: 587px 565px;
+  background-position: right bottom;
+  background-attachment: fixed;
+}
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+  .header-main-bg
+  {
+    background-image: url(../img/watch@2x.png)
+  }
+}
+
+.site-content-box
+{
+  max-width: 490px;
+  width: 100%;
+  margin-top: 170px;
+  margin-bottom: 185px;
+}
+.site-content-heading
 {
   font-family: Roboto;
   font-size: 50px;
@@ -123,10 +168,9 @@ display: flex;
   color:  #000000;
   padding: 0;
   margin: 0;
-  margin-top: 170px;
   margin-bottom: 30px;
 }
-.site-header-main-text
+.site-content-text
 {
   font-family: Roboto;
   font-size: 16px;
@@ -140,17 +184,176 @@ display: flex;
   padding-left: 40px;
   margin-bottom: 30px;
 }
-
-.site-header-main-button
+.site-header-main-img
+{
+  margin-top: 79px;
+  width: auto;
+  height: 565px;
+}
+.site-header-bottom-line
+{
+  display: flex;
+padding: 0;
+margin: 0;
+height: 2px;
+background-color: #DDDDDD;
+border: 0;
+}
+/* =============================== */
+/* ========= MAIN SECTION ======== */
+/* =============================== */
+.main-content
 {
 
 }
-.site-header-main-img
+.site-main-container
+{
+  padding-top: 68px;
+  padding-bottom: 70px;
+}
+.site-main-top
+{
+  display: flex;
+}
+.site-main-top-box
+{
+  max-width: 280px;
+  width: 100%;
+}
+.site-main-top-box:not(:last-child)
+{
+  margin-right: 80px;
+}
+.site-main-top-box-heading
+{
+  margin: 0;
+  padding: 0;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  color: #222222;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.site-main-top-box-text
+{
+  margin: 0;
+  padding: 0;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #333333;
+  padding-bottom: 20px;
+}
+.box-bottom
+{
+  display: flex;
+}
+.rectangle
+{
+  width: 8px;
+  height: 8px;
+  background-color: #DDDDDD;
+  margin-right: 10px;
+}
+.site-main-box-link
+{
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #EA625C;
+}
+.site-main-box-link:hover
+{
+  width: 100%;
+  opacity: 0.8;
+}
+.site-main-box-link:active
+{
+  opacity: 0.6;
+}
+.site-main-box-link::before
+{
+  display: inline-block;
+  width: 40px;
+  height: 3px;
+  background-color: #EA625C;
+  content: "";
+  margin-right: 10px;
+}
+.site-main-box-link:hover::before
+{
+  width: 100%;
+  max-width: 60px;
+  opacity: 0.8;
+}
+/* ======================= */
+/* ======== FEATURE ====== */
+/* ======================= */
+.feature-content-box
+{
+  margin-top: 106x;
+  margin-bottom: 106px;
+  margin-right: 110px;
+}
+.feature-img
+{
+  display: flex;
+  width: 400px;
+  height: 600px;
+}
+.site-feature-container
+{
+  display: flex;
+  align-items: center;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+/* =============================== */
+/* ======= SITE FOOTER =========== */
+/* =============================== */
+.site-footer
+{
+  display: flex;
+  background-image: url(../img/background.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+  .site-footer
+  {
+    background-image: url(../img/background@2x.jpg);
+  }
+}
+.site-footer-container
 {
 
-  margin-top: 79px;
-width: auto;
-height: 565px;
-position: absolute;
-right: 0px;
+}
+
+.footer-content-box
+{
+  margin-top: 240px;
+  margin-left: 510px;
+  margin-bottom: 240px;
+}
+.footer-content-heading
+{
+  color: #FFFFFF;
+}
+.footer-content-text
+{
+  color: #FFFFFF;
+  border-left: 3px solid #FFFFFF;
 }
