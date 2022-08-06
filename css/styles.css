@@ -140,6 +140,7 @@ display: block;
   background-position: right bottom;
   position: absolute;
   left: calc(50% + 235px);
+  top: calc(-4px);
 }
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
