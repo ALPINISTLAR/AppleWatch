@@ -125,6 +125,7 @@ display: block;
 .site-header-main-container
 {
   display: flex;
+  position: relative;
 }
 .header-main-bg
 {
@@ -137,7 +138,8 @@ display: block;
   background-repeat: no-repeat;
   background-size: 587px 565px;
   background-position: right bottom;
-  background-attachment: fixed;
+  position: absolute;
+  left: calc(50% + 235px);
 }
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
