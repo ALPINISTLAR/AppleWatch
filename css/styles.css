@@ -17,8 +17,8 @@ body
 }
 img
 {
-max-width: 100%;
-display: block;
+  max-width: 100%;
+  display: block;
 }
 /* ========== BUTTON ========= */
 .button
@@ -64,9 +64,15 @@ display: block;
 /* =========================================== */
 /* ============== SITE HEADER ================ */
 /* =========================================== */
-.site-header
+.site-header-logo-link
 {
-
+  display: flex;
+}
+.site-header-logo-link:hover{
+  opacity: 0.8;
+}
+.site-header-logo-link:active{
+  opacity: 0.6;
 }
 .site-logo-img
 {
@@ -137,7 +143,7 @@ display: block;
   background-image: url(../img/watch.png);
   background-repeat: no-repeat;
   background-size: 587px 565px;
-  background-position: right bottom;
+  /* background-position: right bottom; */
   position: absolute;
   left: calc(50% + 235px);
   top: calc(-4px);
@@ -196,11 +202,11 @@ only screen and (                min-resolution: 2dppx) {
 .site-header-bottom-line
 {
   display: flex;
-padding: 0;
-margin: 0;
-height: 2px;
-background-color: #DDDDDD;
-border: 0;
+  padding: 0;
+  margin: 0;
+  height: 2px;
+  background-color: #DDDDDD;
+  border: 0;
 }
 /* =============================== */
 /* ========= MAIN SECTION ======== */
