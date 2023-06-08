@@ -484,8 +484,4 @@ only screen and (                min-resolution: 2dppx) {
     width: 294px;
     height: 283px;
   }
-  .feature-img{
-    width: 300px;
-    height: 450px;
-  }
 }
